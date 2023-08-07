@@ -1,0 +1,31 @@
+{
+  "applications": [
+    {
+      "key": "default",
+      "name": "Default",
+      "description": "My new dcupl application",
+      "transformerKeys": ["data_transformer"],
+      "resourceTags": ["model", "data"]
+    }
+  ],
+  "transformers": [
+    {
+      "key": "data_transformer",
+      "type": "parsedFileTransformer",
+      "tags": ["transform"]
+    }
+  ],
+  "resources": [
+    {
+      "url": "${baseUrl}/models/show.dcupl.json",
+      "type": "model",
+      "tags": ["model"]
+    },
+    {
+      "url": "${baseUrl}/data/IMDB.csv",
+      "type": "data",
+      "model": "show",
+      "tags": ["data", "transform"]
+    }
+  ]
+}

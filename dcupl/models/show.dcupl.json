@@ -1,0 +1,58 @@
+{
+  "key": "show",
+  "keyProperty": "Name",
+  "properties": [
+    {
+      "key": "Name",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "Year",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "Episodes",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "EpisodesAsNumber",
+      "type": "int",
+      "meta": {
+        "name": "Episodes as Number",
+        "description": "Generated via data_transformer"
+      }
+    },
+    {
+      "key": "Type",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "Rating",
+      "type": "float",
+      "filter": true
+    },
+    {
+      "key": "Image-src",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "Description",
+      "type": "string",
+      "filter": true
+    },
+    {
+      "key": "Name-href",
+      "type": "string",
+      "filter": true
+    }
+  ],
+  "references": [],
+  "autoGenerateKey": true,
+  "supportsAutoCreation": false,
+  "autoGenerateProperties": false
+}
