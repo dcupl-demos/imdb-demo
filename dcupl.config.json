@@ -5,7 +5,7 @@
   "dataBasePath": "dcupl/data",
   "baseFolder": "dcupl",
   "filesUpload": {
-    "include": ["**/*.json", "**/*.csv"],
+    "include": ["**/*.json", "**/*.csv", "**/*.js"],
     "exclude": []
   }
 }
