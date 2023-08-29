@@ -4,17 +4,10 @@
       "key": "default",
       "name": "Default",
       "description": "My new dcupl application",
-      "transformerKeys": ["data_transformer"],
-      "resourceTags": ["model", "data"]
+      "resourceTags": ["model", "data", "my_transformer"]
     }
   ],
-  "transformers": [
-    {
-      "key": "data_transformer",
-      "type": "parsedFileTransformer",
-      "tags": ["transform"]
-    }
-  ],
+
   "resources": [
     {
       "url": "${baseUrl}/models/show.dcupl.json",
@@ -26,6 +19,12 @@
       "type": "data",
       "model": "show",
       "tags": ["data", "transform"]
+    },
+    {
+      "url": "${baseUrl}/transformers/data_transformer.js",
+      "type": "transformer",
+      "tags": ["my_transformer"],
+      "applyTo": ["data"]
     }
   ]
 }
